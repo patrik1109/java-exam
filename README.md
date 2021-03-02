@@ -68,5 +68,8 @@ to interact with the class called Gameplay, using `start` and
  You can use this as hints or ignore them if you think it can
  be done better.
  
+ 
  **Note - unlike part 1 - here you need to touch the test section**.
+ 
+ **Please DO NOT use Groom"
  
