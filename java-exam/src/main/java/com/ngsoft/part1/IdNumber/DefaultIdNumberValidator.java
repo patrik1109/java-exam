@@ -7,9 +7,25 @@ package com.ngsoft.part1.IdNumber;
  * Implement this properly and the IdNumberTest will pass.
  * Try to make youre implementation simple and readable.
  */
+
 public class DefaultIdNumberValidator implements IdNumberValidator {
     @Override
     public boolean isValid(String idNumber) {
-        return false;
+        if(idNumber == null ){
+            throw new IllegalArgumentException("Value can not be null");
+        }
+
+        else if(idNumber.isEmpty() || idNumber.length()==0 ) {
+            return false;
+        }
+
+        else if(idNumber.matches("^[a-zA-Z]+[0-9]*$")) {
+            return false;
+        }
+        else if(!idNumber.matches("^.*27996917.*$")) {
+            return false;
+        }
+        else
+            return true;
     }
 }

@@ -1,5 +1,7 @@
 package com.ngsoft.part2.SetGame;
 
+import com.ngsoft.part2.SetGame.entity.Card;
+
 import java.util.List;
 
 public interface GamePlay {
@@ -32,6 +34,11 @@ public interface GamePlay {
      * @return the current score which is the number of success minus failures.
      */
     int getScore();
+
+    // follow the rules  gamer can to get more additional 3 cards if no any sets in reveled cards
+    //
+    boolean getMoreCards();
+
 
 
 }

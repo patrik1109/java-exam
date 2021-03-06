@@ -5,10 +5,25 @@
        xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
+    <alias name="defaultTodoService" alias="TodoService"/>
+    <bean name="defaultTodoService" class="com.ngsoft.part1.services.DefaultTodoService"></bean>
+
     <alias name="defaultTodoDao" alias="todoDao"/>
     <bean name="defaultTodoDao" class="com.ngsoft.part1.dao.DefaultTodoDao"></bean>
 
     <alias name="defaultIdNumberValidator" alias="idNumberValidator"/>
     <bean name="defaultIdNumberValidator" class="com.ngsoft.part1.IdNumber.DefaultIdNumberValidator"/>
+
+    <alias name="deck" alias="deck"/>
+    <bean name="deck" class="com.ngsoft.part2.SetGame.DeckImpl"></bean>
+
+    <alias name="gamePlay" alias="gamePlay"/>
+    <bean name="gamePlay" class="com.ngsoft.part2.SetGame.GamePlayImpl"></bean>
+
+    <alias name="gameRules" alias="gameRules"/>
+    <bean name="gameRules" class="com.ngsoft.part2.SetGame.GameRulesImpl"></bean>
+
+    <alias name="gameResult" alias="gameResult"/>
+    <bean name="gameResult" class="com.ngsoft.part2.SetGame.GameResult"></bean>
 
 </beans>

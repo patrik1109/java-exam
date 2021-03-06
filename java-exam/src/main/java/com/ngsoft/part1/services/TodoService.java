@@ -1,5 +1,8 @@
 package com.ngsoft.part1.services;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public interface TodoService {
     /**
      * This method should count all the items in the list

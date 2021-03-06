@@ -1,5 +1,7 @@
 package com.ngsoft.part2.SetGame;
 
+import com.ngsoft.part2.SetGame.entity.Card;
+
 import java.util.Collection;
 
 public interface GameRules {
